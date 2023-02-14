@@ -1,0 +1,231 @@
+<link href="assets/css/stylesheet.css" rel="stylesheet">
+<script defer="" src="assets/fontawesome/all.min.js"></script>
+<div id="resume">
+<div id="header">
+<div id="header-title">
+<h1 id="jérôme-vizcaino">Jérôme Vizcaino</h1>
+<p>Senior Software Engineer</p>
+</div>
+<div id="header-info">
+<ul>
+<li><i class="fa-solid fa-location-dot"></i> <a
+href="https://www.google.com/maps/place/40+Rue+de+la+Libert%C3%A9,+93230+Romainville/@48.882833,2.4269605,17z/">Romainville,
+France</a></li>
+<li><i class="fa-solid fa-phone"></i> <a href="tel:+33635420825">+33 6
+35 42 08 25</a></li>
+<li><i class="fa-solid fa-envelope"></i> <a
+href="email:j.vizcaino.pro@gmail.com">j.vizcaino.pro@gmail.com</a></li>
+<li><i class="fa-brands fa-github"></i> <a
+href="https://github.com/j-vizcaino">https://github.com/j-vizcaino</a></li>
+</ul>
+</div>
+<p><!-- #header-info --></p>
+</div>
+<p><!-- #header --></p>
+<hr />
+<div id="content">
+<div id="content-main">
+<h1 id="experience">Experience</h1>
+<h2
+id="datadog-senior-software-engineer-paris-april-2020---present">Datadog
+<em>Senior Software Engineer</em> <em>Paris, April 2020 -
+Present</em></h2>
+<h3 id="support-and-improve-existing-stack">Support and improve existing
+stack</h3>
+<ul>
+<li>Stabilize legacy events <strong>intake pipeline</strong> and
+<strong>indexing backend</strong>, composed of a <strong>Kafka</strong>
+consumer written in <strong>Go</strong>, and a large
+<strong>Elasticsearch</strong> cluster (300+ nodes, ~50k docs/sec
+indexing rate, ~1k/sec query rate): identify product constraints,
+develop a <strong>custom controller</strong> to manage indices and
+settings, with extra tooling to operate the clusters (Go, Python).</li>
+<li>Improve <strong>scalability</strong> and reduced <strong>maintenance
+cost</strong> of internal Alerting results historical storage
+(<strong>Elasticsearch</strong>, <strong>object storage</strong>
+backend, +80k docs/sec, AWS, GCP and Azure support)</li>
+<li>Reduce <strong>on-call fatigue</strong> for Alerting folks, by
+redefining <strong>platform SLI</strong> granularity and
+<strong>onboarding</strong> 8 product teams to the new model.</li>
+</ul>
+<h3 id="develop-product-features">Develop product features</h3>
+<ul>
+<li>Lower onboarding time for new Alerting products, <strong>merging 13
+data models</strong> into a <strong>single generic and
+extensible</strong> model (Protobuf, 10 apps from 3 teams).</li>
+<li>Increase <strong>resiliency</strong> of Alerting product to lag in
+the data intake pipelines: <strong>redesign scheduling engine</strong>
+to support new model (Go, code refactoring, TDD).</li>
+</ul>
+<h3 id="mentoring">Mentoring</h3>
+<ul>
+<li>Provide code contributions and reviews <strong>best
+practices</strong> (software design, effective PR reviews), pair
+programming.</li>
+<li>Onboard Senior software engineer to Go language.</li>
+</ul>
+<h2
+id="datadog-site-reliability-engineer-paris-april-2017---april-2020">Datadog
+<em>Site Reliability Engineer</em> <em>Paris, April 2017 - April
+2020</em></h2>
+<h3 id="improve-reliability">Improve reliability</h3>
+<ul>
+<li>Contribute to infrastructure-as-code improvements, further embracing
+Terraform for AWS resources and Packer for machine images. Develop a
+custom templating tool, to circumvent Terraform 0.10 limitations (used
+by ~200 devs, written in Python).</li>
+<li>Run game-days with developers: identify error patterns before they
+occur in production (chaos engineering)</li>
+</ul>
+<h3 id="enable-kubernetes-migration-for-teams">Enable Kubernetes
+migration for teams</h3>
+<ul>
+<li>Develop a custom Kubernetes controller for statically sharded
+deployments (Go, using controller-runtime). Used by 14 applications,
+from 8 different teams. Biggest sharded deployment supporting 500
+shards.</li>
+<li>Help developers migrate their applications: Helm charts authoring,
+deployment strategies, …</li>
+</ul>
+<h2 id="datadog-core-interviewer-paris-january-2018---present">Datadog
+<em>Core Interviewer</em> <em>Paris, January 2018 - Present</em></h2>
+<ul>
+<li>Run <strong>coding and design interviews</strong> (1-2 per
+week)</li>
+<li>Mentoring: contributed to learning material, taking part in
+<strong>shadow and feedback process</strong> for new interviewers</li>
+</ul>
+<h2
+id="ministère-de-la-défense-senior-software-engineer-paris-january-2010---april-2017">Ministère
+de la Défense <em>Senior Software Engineer</em> <em>Paris, January 2010
+- April 2017</em></h2>
+<h3 id="renew-developer-environment-100-users">Renew developer
+environment (~100 users)</h3>
+<ul>
+<li>Deploy infrastructure core services on bare-metal with CoreOS,
+Kubernetes + Docker (PowerDNS, DHCP, Ceph, Openstack, MariaDB/Galera,
+RabbitMQ, Puppet, Foreman)</li>
+<li>Run end-user services using Openstack KVM virtual machines, managed
+by Puppet</li>
+<li>Install and configure developer workstations running Debian, using
+Foreman and Puppet</li>
+</ul>
+<h3
+id="manage-debian-repositories-and-streamline-package-building">Manage
+Debian repositories and streamline package building</h3>
+<ul>
+<li>Enable ~50 developers building Debian packages in a reproducible way
+(NodeJS micro-services, Python Celery, RabbitMQ)</li>
+<li>Open internal Debian repositories management to devs and ops teams,
+using a CLI supported by a REST service written in Python3, featuring
+safe package import with dependencies resolution.</li>
+</ul>
+<h3 id="develop-signal-collector-and-processing-solution">Develop signal
+collector and processing solution</h3>
+<ul>
+<li>End-to-end solution for radio signal digitization, dispatching and
+processing running 4 Debian boxes.</li>
+<li>Solution included custom PCIe board handling, responsible for
+digitizing signal and broadcasting samples using multicast UDP groups (4
+Gb/s total), resource management and data processing using the in-house
+C++ framework described below, as well as a real-time monitoring
+interface created with AngularJS.</li>
+</ul>
+<h3
+id="support-dsp-engineers-in-writing-c-multithreaded-applications">Support
+DSP engineers in writing C++ multithreaded applications</h3>
+<ul>
+<li>Design, develop, document and support a C++ framework for
+multi-threaded, realtime data processing applications (C++, CMake,
+Doxygen).</li>
+<li>Dynamic flow-based programming: processing pipeline is represented
+by a graph of blocks connected together.</li>
+<li>Core engine leveraging asynchronous, event-based programming (Qt
+event-loop), as well as a block scheduler using a thread-per-core
+model.</li>
+</ul>
+<h2
+id="ministère-de-la-défense-software-engineer-paris-january-2004---january-2010">Ministère
+de la Défense <em>Software Engineer</em> <em>Paris, January 2004 -
+January 2010</em></h2>
+<p>Cryptography department</p>
+<h3 id="develop-software-support-for-custom-hardware">Develop software
+support for custom hardware</h3>
+<ul>
+<li>Develop, run and operate a real-time data processing service
+targeting custom hardware (~300 node cluster, Debian, C++, Qt4 event
+loop).</li>
+<li>Develop IDE for crypto-mathematicians developing and debugging
+algorithms targeting an in-house RISC processor, by interfacing with
+processor software emulator (C++ library, Qt4 UI).</li>
+<li>Add support for custom PCI board in Linux 2.6 (char driver,
+userspace library, C).</li>
+<li>Automate unattended Debian systems installation, and extend it to
+provide hardware testing before deployment.</li>
+</ul>
+</div>
+<p><!-- #content-main --></p>
+<div id="content-side">
+<h1 id="education">Education</h1>
+<h3 id="esiee-paris-2004">ESIEE Paris <em>2004</em></h3>
+<p>Master’s degree in computer science</p>
+<h3 id="aws-day-2015">AWS Day <em>2015</em></h3>
+<p>AWS introduction and best-practices</p>
+<h3 id="com-network-switches-2008">3COM network switches
+<em>2008</em></h3>
+<p>Network protocols and switches configuration</p>
+<h3 id="linux-kernel-drivers-2007">Linux Kernel Drivers
+<em>2007</em></h3>
+<p>Linux kernel driver development</p>
+<h3 id="cryptography-and-security-2005">Cryptography and security
+<em>2005</em></h3>
+<p>Cryptographic theory and security application</p>
+<h1 id="skills">Skills</h1>
+<h3 id="languages">Languages</h3>
+<ul>
+<li>Go</li>
+<li>Python</li>
+<li>C++</li>
+</ul>
+<h3 id="envtools">Env/tools</h3>
+<ul>
+<li>Linux (Debian, Ubuntu)</li>
+<li>AWS, GCP</li>
+<li>Kubernetes, Docker, Helm</li>
+<li>Terraform</li>
+<li>Git, Github</li>
+</ul>
+<h1 id="foreign-languages">Foreign languages</h1>
+<h3 id="english">English</h3>
+<p>Full professional proficiency CEFR : C2</p>
+<h3 id="spanish">Spanish</h3>
+<p>Elementary proficiency</p>
+<h1 id="misc.">Misc.</h1>
+<h3 id="daily-reading">Daily reading</h3>
+<ul>
+<li>LWN</li>
+<li>Phoronix</li>
+<li>Martin Fowler</li>
+<li>High Scalability</li>
+<li>Blogs: Golang News, Kubernetes Weekly, Rust</li>
+</ul>
+<h3 id="personal-project">Personal project</h3>
+<p>Electrical current telemetry at home: Go program decoding frames read
+from consumer unit, storing them in InfluxDB. User interface showing
+graphs with Grafana.</p>
+<h3 id="security-clearance">Security clearance</h3>
+<p>Secret Défense (Top Secret)</p>
+<h3 id="licenses">Licenses</h3>
+<p>Car, motorcycle, boat</p>
+<h3 id="hobbies">Hobbies</h3>
+<ul>
+<li>Drummer (15 years, multiple bands)</li>
+<li>Canyoneering association leader (5 years)</li>
+<li>Rock climbing (15 years)</li>
+</ul>
+</div>
+<p><!-- #content-side --></p>
+</div>
+<p><!-- #content --></p>
+</div>
+<p><!-- #resume --></p>

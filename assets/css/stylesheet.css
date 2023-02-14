@@ -1,0 +1,506 @@
+:root {
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --black: #000;
+    --white: #fff;
+    --gray: #767676;
+    --gray-dark: #434343;
+    --gray-100: #c2c2c2;
+    --gray-200: #b5b5b5;
+    --gray-300: #a9a9a9;
+    --gray-400: #9c9c9c;
+    --gray-500: #8f8f8f;
+    --gray-600: #767676;
+    --gray-700: #5c5c5c;
+    --gray-800: #434343;
+    --gray-900: #292929;
+    --primary: #54B689;
+    --secondary: #4f4f4f;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #c2c2c2;
+    --dark: #292929;
+    --primary-rgb: 84, 182, 137;
+    --secondary-rgb: 79.25, 79.25, 79.25;
+    --success-rgb: 25, 135, 84;
+    --info-rgb: 13, 202, 240;
+    --warning-rgb: 255, 193, 7;
+    --danger-rgb: 220, 53, 69;
+    --light-rgb: 194, 194, 194;
+    --dark-rgb: 41, 41, 41;
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+    --body-color-rgb: 41, 41, 41;
+    --body-bg-rgb: 255, 255, 255;
+    --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --body-font-family: var(--font-sans-serif);
+    --body-font-size: 1rem;
+    --body-font-weight: 300;
+    --body-line-height: 1.5;
+    --body-color: #4f4f4f;
+    --body-bg: #ddd;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #a9a9a9;
+    --border-color-translucent: rgba(0, 0, 0, 0.175);
+    --border-radius: .375rem;
+    --border-radius-sm: .25rem;
+    --border-radius-lg: .5rem;
+    --border-radius-xl: 1rem;
+    --border-radius-2xl: 2rem;
+    --border-radius-pill: 50rem;
+    --heading-color: ;
+    --h1-color: #54B689;
+    --link-color: #54B689;
+    --link-hover-color: #43926e;
+    --code-color: #d63384;
+    --highlight-bg: #fff3cd
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth
+    }
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    color: var(--body-color);
+    text-align: var(--body-text-align);
+    background-color: var(--body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--heading-color)
+}
+
+h1,
+.h1 {
+    font-size: calc(1.375rem + 1.5vw);
+
+}
+
+@media (min-width: 1200px) {
+
+    h1,
+    .h1 {
+        font-size: 2.5rem
+    }
+}
+
+h2,
+.h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width: 1200px) {
+
+    h2,
+    .h2 {
+        font-size: 2rem
+    }
+}
+
+h3,
+.h3 {
+    font-size: calc(1.3rem + .6vw)
+}
+
+@media (min-width: 1200px) {
+
+    h3,
+    .h3 {
+        font-size: 1.75rem
+    }
+}
+
+h4,
+.h4 {
+    font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width: 1200px) {
+
+    h4,
+    .h4 {
+        font-size: 1.5rem
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem
+}
+
+h6,
+.h6 {
+    font-size: 1rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+
+ol,
+ul {
+    padding-left: 2rem
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0
+}
+
+dt {
+    font-weight: 700
+}
+
+dd {
+    margin-bottom: .5rem;
+    margin-left: 0
+}
+
+blockquote {
+    margin: 0 0 1rem
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+small,
+.small {
+    font-size: .875em
+}
+
+mark,
+.mark {
+    padding: .1875em;
+    background-color: var(--highlight-bg)
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: .75em;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline
+}
+
+a:hover {
+    color: var(--link-hover-color)
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--font-monospace);
+    font-size: 1em
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    font-size: .875em
+}
+
+pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal
+}
+
+code {
+    font-size: .875em;
+    color: var(--code-color);
+    word-wrap: break-word
+}
+
+a>code {
+    color: inherit
+}
+
+
+/*------------------------------------------*/
+
+#title-block-header {
+    display: none;
+}
+
+#resume {
+    line-height: 1.2;
+    margin: 40px auto 0 auto;
+    max-width: 1260px;
+    padding: 40px 60px;
+    background: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+
+#header {
+    display: flex;
+    font-size: 80%;
+}
+
+#header-title {
+    width: 75%;
+}
+
+#header-title>h1 {
+    font-size: 2.75rem;
+    letter-spacing: 0.4rem;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+#header-title>h1::before {
+    display: none;
+}
+
+#header-title>p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.15rem;
+}
+
+#header-info {
+    width: 25%;
+}
+
+#content {
+    display: flex;
+}
+
+#content-main {
+    width: 75%;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: var(--border-color-translucent) 1px solid;
+}
+
+#content-side {
+    width: 25%;
+    font-size: 80%;
+}
+
+h1:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: var(--h1-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: left;
+    font-size: 150%;
+    color: var(--h1-color);
+    position: relative;
+    letter-spacing: 0.15rem;
+    padding-left: 1rem;
+    margin: 1em 0 0.5em 0;
+}
+
+h2 {
+    color: #292929;
+    font-weight: bold;
+    font-size: 130%;
+    margin: 1em 0 0.5em 0;
+    font-variant: small-caps;
+}
+
+h2>em {
+    font-variant: normal;
+    font-weight: normal;
+}
+
+/* Job title */
+h2>em:first-child {
+    font-size: 85%;
+    padding-left: 1.5em;
+}
+
+/* Job dates */
+h2>em:last-child {
+    float: right;
+    font-size: 65%;
+    font-weight: 200;
+    padding-top: 0.5em;
+    color: #555;
+}
+
+h3 {
+    font-style: italic;
+    color: #111;
+    font-size: 110%;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    display: flex;
+}
+
+h3>em:first-child {
+    font-size: 80%;
+    color: var(--gray-600);
+    font-weight: 200;
+    text-align: right;
+    flex-grow: 1;
+}
+
+ul {
+    padding: 0;
+    margin: 0 1.5em;
+}
+
+li {
+    margin-top: 0.3rem;
+}
+
+#header-info>ul>li::marker {
+    content: "";
+}
+
+@media print {
+    body {
+        font-size: 10pt;
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    #resume {
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        background: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    /* Do not underline abbr tags in PDF */
+    abbr {
+        text-decoration: none;
+        font-variant: none;
+    }
+
+    /* Make links black in PDF */
+    /* Move this outside the print block to apply this in HTML too */
+    a,
+    a:link,
+    a:visited,
+    a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+
+@page {
+    /* Change margins and paper size of PDF */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
+    size: a4;
+    margin: 0.5in 0.8in;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 16pt;
+        margin: 0;
+        padding: 0;
+        background: #FFFFFF !important;
+    }
+
+    #resume {
+        margin: 0;
+        padding: 1em;
+        border: 0px;
+        background: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
