@@ -315,7 +315,7 @@ a>code {
     padding: 40px 60px;
     background: #eee;
     border: 1px solid #ccc;
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }
 
 #header {
@@ -448,7 +448,7 @@ li {
 
 @media print {
     body {
-        font-size: 10pt;
+        font-size: 12pt;
         margin: 0;
         padding: 0;
         background: none;
@@ -458,9 +458,14 @@ li {
         margin: 0;
         padding: 0;
         border: 0px;
+        max-width: 100%;
         background: none;
         box-shadow: none;
-        -webkit-box-shadow: none;
+    }
+
+    h1:before {
+        content: "▍ ";
+        background-color: white;
     }
 
     /* Do not underline abbr tags in PDF */
@@ -475,19 +480,19 @@ li {
     a:link,
     a:visited,
     a:hover {
-        color: #000000;
-        text-decoration: underline;
+        color: var(--body-color);
+        text-decoration: none;
     }
 }
 
 @page {
     /* Change margins and paper size of PDF */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
-    size: a4;
-    margin: 0.5in 0.8in;
+    size: a3;
+    margin: 8mm 10mm;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
     body {
         font-size: 16pt;
         margin: 0;
