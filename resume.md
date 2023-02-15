@@ -57,6 +57,12 @@ Datadog _Senior Software Engineer_ _Paris, April 2020 - Present_
 * Provide code contributions and reviews **best practices** (software design, effective PR reviews), **pair programming**.
 * Onboard Senior software engineer to Go language.
 
+Datadog _Core Interviewer_ _Paris, January 2018 - Present_
+---------------------------------------------------------------------------------------------------
+
+* Run **coding and design interviews** (1-2 per week).
+* Mentoring: contributed to learning material, taking part in **shadow and feedback process** for new interviewers.
+
 
 Datadog _Site Reliability Engineer_ _Paris, April 2017 - April 2020_
 ---------------------------------------------------------------------------------------------------
@@ -71,14 +77,19 @@ Datadog _Site Reliability Engineer_ _Paris, April 2017 - April 2020_
 * Develop a **custom Kubernetes controller** for statically sharded deployments (**Go**, using *controller-runtime*). Used by 14 applications, from 8 different teams. Biggest sharded deployment supporting 500 shards.
 * Help developers migrate their applications: Helm charts authoring, deployment strategies, …
 
-Datadog _Core Interviewer_ _Paris, January 2018 - Present_
----------------------------------------------------------------------------------------------------
-
-* Run **coding and design interviews** (1-2 per week).
-* Mentoring: contributed to learning material, taking part in **shadow and feedback process** for new interviewers.
-
 Ministère de la Défense _Senior Software Engineer_ _Paris, January 2010 - April 2017_ 
 ---------------------------------------------------------------------------------------------------
+
+### Support DSP engineers in writing C++ multithreaded applications
+
+* **Design, develop, document and support** a **C++ framework** for **multithreaded**, **realtime data processing** applications (C++, CMake, Doxygen).
+* Dynamic flow-based programming: processing pipeline is represented by a graph of blocks connected together.
+* Core engine leveraging **asynchronous, event-based** programming (Qt event-loop), as well as a block scheduler using a **thread-per-core** model.
+
+### Develop signal collector and processing solution
+
+* End-to-end solution for radio signal digitization, dispatching and processing running 4 Debian boxes.
+* Solution included custom PCIe board handling, responsible for digitizing signal and broadcasting samples using multicast UDP groups (4 Gb/s total), **resource management** and **data processing** using the in-house C++ framework described below, as well as a realtime monitoring interface created with AngularJS.
 
 ### Renew developer environment (~100 users)
 
@@ -90,17 +101,6 @@ Ministère de la Défense _Senior Software Engineer_ _Paris, January 2010 - Apri
 
 * Enable ~50 developers building Debian packages in a reproducible way (NodeJS micro-services, Python Celery, RabbitMQ).
 * Open internal Debian repositories management to devs and ops teams, using a CLI supported by a REST service written in Python3, featuring safe package import with dependencies resolution.
-
-### Develop signal collector and processing solution
-
-* End-to-end solution for radio signal digitization, dispatching and processing running 4 Debian boxes.
-* Solution included custom PCIe board handling, responsible for digitizing signal and broadcasting samples using multicast UDP groups (4 Gb/s total), **resource management** and **data processing** using the in-house C++ framework described below, as well as a realtime monitoring interface created with AngularJS.
-
-### Support DSP engineers in writing C++ multithreaded applications
-
-* **Design, develop, document and support** a **C++ framework** for **multithreaded**, **realtime data processing** applications (C++, CMake, Doxygen).
-* Dynamic flow-based programming: processing pipeline is represented by a graph of blocks connected together.
-* Core engine leveraging **asynchronous, event-based** programming (Qt event-loop), as well as a block scheduler using a **thread-per-core** model.
 
 Ministère de la Défense _Software Engineer_ _Paris, January 2004 - January 2010_
 ---------------------------------------------------------------------------------------------------
