@@ -46,7 +46,7 @@
     --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --body-font-family: var(--font-sans-serif);
-    --body-font-size: 1rem;
+    --body-font-size: 15px;
     --body-font-weight: 300;
     --body-line-height: 1.5;
     --body-color: #4f4f4f;
@@ -62,9 +62,9 @@
     --border-radius-2xl: 2rem;
     --border-radius-pill: 50rem;
     --heading-color: ;
-    --h1-color: #54B689;
-    --link-color: #54B689;
-    --link-hover-color: #43926e;
+    --h1-color: #004F7C;
+    --link-color: #004F7C;
+    --link-hover-color: #1A2B3C;
     --code-color: #d63384;
     --highlight-bg: #fff3cd
 }
@@ -304,10 +304,6 @@ a>code {
 
 /*------------------------------------------*/
 
-#title-block-header {
-    display: none;
-}
-
 #resume {
     line-height: 1.2;
     margin: 40px auto 0 auto;
@@ -316,6 +312,12 @@ a>code {
     background: #eee;
     border: 1px solid #ccc;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+
+#page-break {
+    display: none;
+    margin: 0;
+    padding: 0;
 }
 
 #header {
@@ -328,7 +330,7 @@ a>code {
 }
 
 #header-title>h1 {
-    font-size: 2.75rem;
+    font-size: 2.3rem;
     letter-spacing: 0.4rem;
     font-weight: 800;
     padding: 0;
@@ -354,9 +356,10 @@ a>code {
 }
 
 #content-main {
+    --content-margin: 40px;
     width: 75%;
-    padding-right: 15px;
-    margin-right: 15px;
+    padding-right: var(--content-margin);
+    margin-right: var(--content-margin);
     border-right: var(--border-color-translucent) 1px solid;
 }
 
@@ -435,7 +438,7 @@ h3>em:first-child {
 
 ul {
     padding: 0;
-    margin: 0 1.5em;
+    margin-left: 1.5em;
 }
 
 li {
@@ -463,19 +466,16 @@ li {
         box-shadow: none;
     }
 
+    #page-break {
+        display: block;
+        height: 10px;
+    }
+
     h1:before {
         content: "▍ ";
         background-color: white;
     }
 
-    /* Do not underline abbr tags in PDF */
-    abbr {
-        text-decoration: none;
-        font-variant: none;
-    }
-
-    /* Make links black in PDF */
-    /* Move this outside the print block to apply this in HTML too */
     a,
     a:link,
     a:visited,
