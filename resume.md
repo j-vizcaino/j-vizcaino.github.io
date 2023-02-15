@@ -4,9 +4,7 @@ author: Senior Software Engineer
 ---
 [email]: email:j.vizcaino.pro@gmail.com
 [mobile]:tel:+33635420825
-[home]:https://www.google.com/maps/place/40+Rue+de+la+Libert%C3%A9,+93230+Romainville/@48.882833,2.4269605,17z/
 [github]: https://github.com/j-vizcaino
-[datadog]: https://www.datadoghq.com/
 
 <link href="assets/css/stylesheet.css" rel="stylesheet">
 <script defer="" src="assets/fontawesome/all.min.js"></script>
@@ -24,7 +22,7 @@ Senior Software Engineer
 
 <div id="header-info">
 
-- <i class="fa-solid fa-location-dot"></i> [Romainville, France][home]
+- <i class="fa-solid fa-location-dot"></i> Romainville, France
 - <i class="fa-solid fa-phone"></i> [+33 6 35 42 08 25][mobile]
 - <i class="fa-solid fa-envelope"></i> [j.vizcaino.pro@gmail.com][email]
 - <i class="fa-brands fa-github"></i> [https://github.com/j-vizcaino][github]
