@@ -52,7 +52,7 @@ Datadog _Senior Software Engineer_ _Paris, April 2020 - Present_
 ### Develop product features
 
 * Lower onboarding time for new Alerting products, **merging 13 data models** into a **single generic and extensible** model (Protobuf, 10 apps from 3 teams).
-* Increase **resiliency** of Alerting product to lag in the data intake pipelines: **redesign scheduling engine** to support new model (Go, code refactoring, TDD).
+* Increase **resilience** of **scheduling engine** against lag in the data pipeline (Go, code refactoring, TDD).
 
 ### Mentoring
 
