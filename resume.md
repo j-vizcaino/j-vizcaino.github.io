@@ -4,7 +4,8 @@ author: Senior Software Engineer
 ---
 [email]: email:j.vizcaino.pro@gmail.com
 [github]: https://github.com/j-vizcaino
-[resume]: https://j-vizcaino.github.io
+[online-resume]: https://j-vizcaino.github.io
+[pdf-resume]: https://j-vizcaino.github.io/resume.pdf
 
 <link href="assets/css/stylesheet.css" rel="stylesheet">
 <script defer="" src="assets/fontawesome/all.min.js"></script>
@@ -25,7 +26,7 @@ Senior Software Engineer
 - <i class="fa-solid fa-location-dot"></i> Romainville, France
 - <i class="fa-solid fa-envelope"></i> [j.vizcaino.pro@gmail.com][email]
 - <i class="fa-brands fa-github"></i> [https://github.com/j-vizcaino][github]
-- <i class="fa-solid fa-user-tie"></i> [Online resume][resume]
+- <span id="online-resume"><i class="fa-solid fa-user-tie"></i> [Online resume][online-resume]</span><span id="pdf-resume"><i class="fa-regular fa-file-pdf"></i> [PDF version][pdf-resume]</span>
 
 </div> <!-- #header-info -->
 </div> <!-- #header -->

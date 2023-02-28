@@ -351,6 +351,14 @@ a>code {
     width: 25%;
 }
 
+#online-resume {
+    display: none;
+}
+
+#pdf-resume {
+    display: inline;
+}
+
 #content {
     display: flex;
 }
@@ -464,6 +472,14 @@ li {
         max-width: 100%;
         background: none;
         box-shadow: none;
+    }
+
+    #online-resume {
+        display: inline;
+    }
+
+    #pdf-resume {
+        display: none;
     }
 
     #page-break {
