@@ -468,7 +468,7 @@ li {
 
     #page-break {
         display: block;
-        height: 10px;
+        height: 2em;
     }
 
     h1:before {

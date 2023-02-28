@@ -3,7 +3,6 @@ title: Jérôme Vizcaino
 author: Senior Software Engineer
 ---
 [email]: email:j.vizcaino.pro@gmail.com
-[mobile]:tel:+33635420825
 [github]: https://github.com/j-vizcaino
 [resume]: https://j-vizcaino.github.io
 
@@ -24,7 +23,6 @@ Senior Software Engineer
 <div id="header-info">
 
 - <i class="fa-solid fa-location-dot"></i> Romainville, France
-- <i class="fa-solid fa-phone"></i> [+33 6 35 42 08 25][mobile]
 - <i class="fa-solid fa-envelope"></i> [j.vizcaino.pro@gmail.com][email]
 - <i class="fa-brands fa-github"></i> [https://github.com/j-vizcaino][github]
 - <i class="fa-solid fa-user-tie"></i> [Online resume][resume]
